@@ -133,7 +133,7 @@ public class App {
         //ISO 8601 - Padrão para representar a Data
         LocalDate hoje = LocalDate.now();//Importado de java.time.LocalDate - Olhe no inicio do código a biblioteca
 
-        @SuppressWarnings("deprecation") //Suprimindo a 'correção' da linha de baixo
+        @SuppressWarnings("deprecation") //Suprimindo o 'aviso' da linha de baixo
         Locale brasil = new Locale("pt","br"); //Adicionando Linguagem e Local
         String diaSemana = hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil); //Colocando o TextStyle (como será escrito) e a localidade
         String saudacao;
